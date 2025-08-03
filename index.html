@@ -1,0 +1,372 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+	<title>Forbidden Dialogue</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Lato:wght@400;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+
+	<!-- Base stylesheet -->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+	<!-- Custom Style -->
+	<style>
+	/* Fonts */
+	@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Lato:wght@400;700&family=Playfair+Display:wght@400;500;600&display=swap');
+
+	/* Page background */
+	body {
+		background-color: #f8f4ed;
+		background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+		font-family: 'Lato', sans-serif;
+		color: #1e1e1e;
+		line-height: 1.7;
+		font-size: 1.05em;
+	}
+
+	/* Headings */
+	h1, h2 {
+		font-family: 'IM Fell English SC', serif;
+		color: #2a2a2a;
+		letter-spacing: 0.5px;
+	}
+
+	h1 {
+		font-size: 3em;
+		text-align: center;
+		margin-top: 1em;
+		margin-bottom: 0.5em;
+	}
+
+	/* Reduce padding around the entire content block */
+.content {
+	padding: 0.5em 1em 1.5em 1em; /* top, right, bottom, left */
+	margin: 0 auto;
+}
+
+/* Pull <h2> upward by reducing top margin */
+h2 {
+	font-family: 'IM Fell English SC', serif;
+	font-size: 2em;
+	color: #4a3f35;
+	margin-top: 0;
+	margin-bottom: 1em;
+	text-align: center;
+}
+h3 {
+	font-family: 'IM Fell English SC', serif;
+	font-size: 1.2em;
+	color: #000000;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+	text-align: left;
+}
+	h4, .major {
+	font-family: 'Lato', sans-serif;
+	color: #2a2a2a;
+	margin-top: 1.5em;
+	margin-bottom: 0.5em;
+	font-weight: 450; /* or 500 for slightly stronger */
+	}
+
+	h5 {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: normal;
+    color: #2a2a2a; /* keep a neutral dark color */
+}
+
+
+	.intro-title {
+	margin-bottom: 1.5em;
+}
+
+
+	/* Paragraphs */
+	h3::first-letter,
+h4::first-letter {
+  font-family: 'IM Fell English SC', sans-serif;
+  font-size: 1.5em;
+  color: #4a3f35;
+  font-weight: normal;
+  line-height: 1;
+ margin-top: 0em;
+	margin-bottom: 0em;
+  display: inline-block; /* or float: left if you want drop cap style */
+  vertical-align: bottom; /* helps align with text */
+}
+
+
+	/* Divider */
+hr {
+  border: none;
+  border-top: 1px solid #4a3f35;
+  width: 100%;
+  margin: 2em auto;
+  position: relative;
+  height: 1px;
+  background: none;
+}
+
+/* Add a small ornament in the center */
+hr::after {
+  content: "*"; /* You can replace this with ✻ ❈ ❖ ❂ or any other unicode ornament */
+  position: absolute;
+  top: -0.7em; /* Adjust vertical position */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f8f4ed; /* match the background color */
+  color: #4a3f35; /* same color as the line */
+  font-size: 1.2em;
+  padding: 0 0.3em;
+  line-height: 1;
+  font-family: 'IM Fell English SC', serif; /* optional for style */
+}
+
+	/* Layout containers */
+	.content, .inner {
+		padding: 1em 1em;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	/* Button */
+	.button {
+	background-color: #4a3f35;
+	color: #fff;
+	border: none;
+	padding: 0.75em 1.5em;
+	transition: background-color 0.3s ease-in-out;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	border-radius: 5px;
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1;
+}
+
+
+	.button:hover {
+		background-color: #7b6658;
+	}
+
+
+	/* Captions */
+	.caption p {
+		font-size: 0.95em;
+		color: #444;
+		line-height: 1.6;
+		text-indent: 0;
+	}
+	/* Custom fix for the spotlight image to prevent cropping */
+/* Final fix to ensure the entire image is visible without cropping or empty space */
+/* Override default spotlight flexbox behavior */
+/* New attempt to ensure the image is wide enough */
+.spotlight .image {
+    /* The template likely has flex: 1 1 50%;, so we'll override it */
+    flex: 2; /* Give the image container twice the space of the content container */
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.spotlight .image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Ensure the image is not cropped */
+}
+
+.spotlight .content {
+    flex: 1; /* Keep the content container at its default size */
+    padding: 4em;
+}
+</style>
+</head>
+
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- One -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h2 class="intro-title">Welcome, you et al., to the Forbidden Dialogue!</h2>
+							<h4>Heated discussions. Subtle deceits. Grand chaos. All in the name of science, philosophy, and nobel… <i>or perhaps Nobel…</i> reasons.</h4>
+							<p></p>
+							<h4>No health points, gold or other such trivialities. Only one true currency of the modern scholar: <b>amount of published papers</b>.</h4>
+							<p></p>
+							<p><i>What greater glory than to outwit thy loved ones and publish whilst they perish?</i></p>
+							<p></p>
+							<p></p>
+							<hr>
+							<h5>DISCLAIMER: This is a work of fiction. Any resemblance to the soul-crushing mechanics of modern academia is purely coincidental....</h5> 
+							<p></p>
+							<p></p>
+							<p></p>
+							<ul class="actions stacked">
+								<li><a href="#first" class="button big wide smooth-scroll-middle">Begin the dialogue...</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/f1.jpeg" alt="" />
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h2>UNRAVELLING THE RULES</h2>
+							<h4>To win the game, be the first to publish 21 papers and claim the ultimate academic glory: <u>the Nobel Prize</u> <i>(but beware, someone may be trying to steal it...)</i>! How to get these papers? Brace yourself and read on.<h4>
+							<h3>1. FIND OUT WHICH SHOLAR YOU ARE...</h3>
+							<h4> At the start of the game, you’ll receive a Scholar  Card telling you which of ten legendary scholars you are. Each scholar has a <b>secret mission</b>. Complete yours successfully, and you’ll earn a glorious 10 published papers <i>(just imagine how many citations you’ll get...)</i>.</h4>
+							<p></p>
+							<h3>2. OBSERVE, CONFRONT, BLUFF</h3>
+							<h4>As the game progresses, closely observe your fellow players. Based on their actions, you might figure out which secret scholar they are. If you're confident in your skills, confront them: I think you are scholar...</h4>
+							<h4>If you're right: sweet, sweet academic validation. You get five published papers, and they suffer ultimate academic shame... 10 of their papers get retracted! However, if you are wrong... Oof... Five of your papers get retracted, and your opponent publishes five new papers <i>(in Q1 journals... Maybe even Nature or Science... Just so it hurts you more)</i></h4>
+							<p></p>
+							<p></p>
+							<h4><i><b>Note for Thee: Bluff!</b></i> Don't just sit there being honest. Bluff like the <i>p-</i> value depends on it. Pretend you're different scholar. Confuse your enemies.</h4>
+							<p></p>
+							<ul class="actions stacked">
+								<li><a href="#second" class="button big wide smooth-scroll-middle">SCHOLARS</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/uh4.jpeg" alt="" />
+						</div>
+					</section>
+
+				<!-- Five -->
+					<section class="wrapper style1 align-center"id="second">
+						<div class="inner">
+							<h2>SCHOLARS</h2>
+							<p>Behold! Before you stand some of the most iconic scholars, each with their own secret mission. Read carefully. Fulfill their bizarre academic desires, and you shall be ever closer to victory...<p>
+						</div>
+
+						<!-- Gallery -->
+							<div class="gallery style2 medium lightbox onscroll-fade-in">
+								<article>
+									<a href="images/mc2.jpeg" class="image">
+										<img src="images/mc2.jpeg" alt="" />
+									</a>
+								</article>
+								<article>
+									<a href="images/sf.jpeg" class="image">
+										<img src="images/sf.jpeg" alt="" />
+									</a>
+								</article>
+								<article>
+									<a href="images/te.jpeg" class="image">
+										<img src="images/te.jpeg" alt="" />
+									</a>
+								</article>
+								<article>
+									<a href="images/wc.jpeg" class="image">
+										<img src="images/wc.jpeg" alt="" />
+									</a>
+								</article>
+								<article>
+									<a href="images/in2.jpeg" class="image">
+										<img src="images/in2.jpeg" alt="" />
+									</a>
+								</article>
+								<article>
+									<a href="images/ae.jpeg" class="image">
+										<img src="images/ae.jpeg" alt="" />
+									</a>
+								</article>
+								
+							</div>
+
+					</section>
+
+				<!-- Three -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h3>3. DISCUSS</h3>
+							<h4>First, begin by reading a question aloud to your fellow intellectuals. Without discussing, each player has to write down their answer. <b>Keep it simple </b>, for example write 'Yes' or 'No'.</h4>
+							<h4>In the moment everyone has written down their profound judgements, reveal them simultaneously. If there is a clear majority (e.g., 3 out of 4 players give the same answer), all players in the majority earn one published paper. If answers are split equally, no published papers are awarded. If all players agree upon the same answer, each player earns 1 published paper, and you're all thriving in the lazy warmth of groupthink.</h4>
+							<hr>
+							<h4>Granted that at least one bold rebel challenged the majority, a discussion phase begins. </h4>
+							<h4>Here, you have up to three minutes to battle for the supremacy of your argument.</h4>
+							<h4>Then, after the discussion, vote again: if all players agree during the second vote, each player earns one published paper. Hooray for the mob mentality! If there's still disagreement, nobody gets a published paper, and (mirroring the classic p>0.05 scenario) you all continue intellectually enriched, but slightly annoyed!</h4>
+							<p></p>
+							<ul class="actions stacked">
+								<li><a href="#Six" class="button big wide smooth-scroll-middle">questions</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/ha6.jpeg" alt="" />
+						</div>
+					</section>
+
+				<!-- Six -->
+					<section class="wrapper style1 align-center" id="Six">
+						<div class="inner">
+							<h2>SOME QUESTIONS FOR THEE</h2>
+							<div class="items style1 medium onscroll-fade-in">
+								<section>
+									<span class="icon style2 major fa fa-times-circle"></span>
+									<p>Should cases of scientific fraud- where researchers falsify, fabricate, or plagiarize data or their findings- be openly disclosed to the general public? </p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-database"></span>
+									<p>Though often criticised, traditional research metrics such as journal impact factor, citation counts and h-index, remain widely used to assess research impact. Should we ditch them entirely and replace them with alternative methods, or do they still have an important role?</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-users"></span>
+									<p>Are Ethics Committees (IRBs) overprotective towards research participants?</p>
+								</section>
+								<section>
+									<span class="icon style2 major fa fa-id-card"></span>
+									<p>You are doing a literature search for your paper and you come across work that you would like to cite it as support for your argument. You notice that the author of the paper is someone who got committed for sexual harassment. Do you cite their work? </p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa fa-globe"></span>
+									<p>Do you think open science currently benefits a narrow group of privileged researchers more than the broader scientific community?</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-dog"></span>
+									<p>Can there be something like voluntary participation in research with animals?</p>
+								</section>
+								<section>
+									<span class="icon style2 major fa fa-folder"></span>
+									<p>Is the risk of participants being identified from open datasets a serious enough concern to limit open data sharing?</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa fa-user-circle"></span>
+									<p>Imagine there's a major crisis in the science, and you must choose one of three individuals- a philosopher, a politician, or a scientist- to address and resolve the issue. Who would you choose?</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa fa-university"></span>
+									<p>You are a researcher doing empirical work with adult participants. Your University just had an ethical issue where participants' data got known due to an error. Is this going to affect your career negatively more if you work at a big, famous University or a small, not famous University?</p>
+								</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+<hr>
+	</body>
+	<footer>
+  <h5>Page design by <a href="https://html5up.net/" target="_blank" rel="noopener noreferrer">HTML5 UP</a></h5>
+</footer>
+
+</html>
